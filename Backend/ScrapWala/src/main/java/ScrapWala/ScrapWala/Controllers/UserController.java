@@ -18,7 +18,7 @@ import ScrapWala.ScrapWala.entities.User;
 import ScrapWala.ScrapWala.services.UserService;
 
 @RestController
-@RequestMapping("/api/dips/")
+//@RequestMapping("/api/dips/")
 public class UserController {
 	
 	@Autowired

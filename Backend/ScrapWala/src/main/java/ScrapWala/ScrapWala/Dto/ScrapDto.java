@@ -1,34 +1,25 @@
-package ScrapWala.ScrapWala.entities;
+package ScrapWala.ScrapWala.Dto;
 
-import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.validation.constraints.NotEmpty;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "scraps")
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor  
-public class Scrap {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ScrapDto {
+	
 	private int id;
+	@NotEmpty
 	private String name;
+	@NotEmpty
 	private int rate;
-	public Scrap(int scrapId, String name, int rate) {
-		super();
-		this.id = scrapId;
-		this.name = name;
-		this.rate = rate;
-	}
-	public Scrap() {
-		// TODO Auto-generated constructor stub
-	}
 	public int getId() {
 		return id;
 	}
@@ -47,7 +38,5 @@ public class Scrap {
 	public void setRate(int rate) {
 		this.rate = rate;
 	}
-	
-	
 	
 }
