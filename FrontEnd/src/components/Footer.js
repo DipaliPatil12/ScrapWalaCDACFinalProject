@@ -26,14 +26,14 @@ function footer(){
         {/* column2 */}
         <div className="col-4">
             <ul className="list-unstyled">
-        <li><a href="index.html" style={{color:"yellow"}}>Why Us</a></li>
-         <li><a href="index.html" style={{color:"yellow"}}>Blogs</a></li>         
-        <li><a href="index.html" style={{color:"yellow"}}>ScrapRates</a></li>
+        <li><a href="/Why" style={{color:"yellow"}}>Why Us</a></li>
+         <li><a href="#" style={{color:"yellow"}}>Blogs</a></li>         
+        <li><a href="/ShowScraps" style={{color:"yellow"}}>ScrapRates</a></li>
         </ul> 
         </div>
         {/* column 3 */}
         <div className="col">
-            <h4>ScrapWala</h4>
+            <h4>Scrap<span style={{color:"yellow"}}>वाला</span></h4>
             <ul className="list-unstyled">
                 <li>Infoway Technologies Private limited</li>
                 <li>Regd.Address</li>
@@ -42,13 +42,27 @@ function footer(){
             </ul>
         </div>
                 </div>
+                <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+           
                 <hr/>
                 <div className="row">
                     <p className="col-sm">
-                       <center>&copy;{new  Date().getFullYear()} ScrapWala | All rights reserved | Terms of Service |Privacy</center> 
+                       <center>&copy;{new  Date().getFullYear()} Scrap<span style={{color:"yellow"}}>वाला</span> | All rights reserved | Terms of Service |Privacy</center> 
                     </p>
                 </div>
             </div>
+
+
+            
         </div>
     )
 }

@@ -12,6 +12,9 @@ import { Container } from "react-bootstrap";
 import './Blogs.js'
 import ScrapRates from "./ScrapRates";
 import Navbar from "./Navbar.js";
+import Footer from "./Footer.js";
+import Otp from "./Otp.js";
+
 
 
 function Home()
@@ -30,10 +33,20 @@ function Home()
       
              </div> 
         {/* </section> */}
-              <div st>
-                
+        <br></br>
+             <br></br>  
+             <br></br>  
+             <div className="container" >
+              <div className="row">
+              <div className="col-2" style={{marginLeft:"80px", color:"green" , width:"20rem"}}><br></br><br></br><br></br>
+                <h1 style={{fontSize:"55px"}}> "Sell your scrap online with Scrap<span style={{color:"green"}}>वाला"</span></h1>
+               </div> 
+               <div className="col-2" style={{ marginLeft:"200px"}}>
+
+
+{/* 
               <div class="card border border-success shadow p-3 mb-5 bg-white rounded "
-               style={{marginLeft:"850px",marginTop:"10px",width:"20rem", height:"17rem",backgroundColor:" rgb(58, 179, 74)"}}>
+               style={{marginLeft:"450px",marginTop:"10px",width:"20rem", height:"17rem",backgroundColor:" rgb(58, 179, 74)"}}>
                 
                 <div class="card-body">
                   <h5 class="card-title card-text">Schedule a Pickup</h5>
@@ -52,11 +65,20 @@ function Home()
                   <p class="font-weight-light font-italic "><i>Facing Problems? Call us at</i> <a href="tel:+91 1234567890" style={{color:"green"}}> <br></br><i style={{color:"green"}}>+911234567890</i></a></p>
                            </form> 
                            
-                </div>
                 
+                </div>
+                </div> */}
+
+
+                <Otp/>
               </div>
               </div>
-                          
+              </div>
+              
+             <br></br>
+             <br></br> 
+             <br></br>  
+             <br></br>            
 
    {/* How It works */}
 
@@ -71,6 +93,8 @@ function Home()
 <div class="col-lg-4 col-md-6">
 <div class="how_works_col"><h4 style={{color:"white"}}>Receive payment</h4><img src="https://ik.imagekit.io/y8s2vhk66ef/undraw_Credit_card_payments_re_qboh_1_Sop8u3hvUiX.png?updatedAt=1628624812461" alt=""/>
 </div></div></div></div>
+<br></br> 
+<br></br>
   
 {/* presence accross nation */}
 
@@ -78,38 +102,38 @@ function Home()
 <section><div class="container h-100 d-flex flex-column justify-content-center"><h1 class="pt-10 d-block d-lg-none text-center">Our <span class="fg-success-2">Presence</span> Across Nation</h1>
         <br></br>
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6 order-lg-1 order-2"><h1 class="d-none d-lg-block">Our <span class="fg-success-2">Presence</span> Across Nation</h1>
+            <div class="col-12 col-lg-6 order-lg-1 order-2"><h1 class="d-none d-lg-block" style={{color:"green"}}>Our <span class="fg-success-2">Presence</span> Across Nation</h1>
             <br></br><br></br>
                 <div class="py-6 body-lg text-center text-lg-start">
-                    The ScrapWala has established its services in <span class="fg-success-2"> Major city of Maharashtra </span> and is now expanding its reach in other parts of the state.
+                   <h5> The<span style={{color:'green'}}> ScrapWala</span> has established its services in <span class="fg-success-2"> Major city of Maharashtra </span> and is now expanding its reach in other parts of the state.</h5>
                 </div><br></br>
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3">
                     
-                <button type="button" class="btn btn-success btn-lg">Pune</button>
+                
                 <br></br>
            
                     <div class=" container-bg-warning-2 rounded-3 text-center">
-                       
-                        <button type="button" class="btn btn-warning">Ahmednagar</button>
-                        <div class="body-sm fg-warning-1"> coming soon </div></div>
+                    <button type="button" class="btn btn-success">Pune</button>&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-warning" style={{width:"8rem"}}>Ahmednagar</button>
+                       <div class="body-sm fg-warning-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coming soon </div></div>
                     <div class=" container-bg-warning-2 rounded-3 text-center">
                     <button type="button" class="btn btn-warning">Mumbai</button>
                         <div class="body-sm fg-warning-1">coming soon</div></div>
                         <div class=" container-bg-warning-2 rounded-3 text-center">
                         <button type="button" class="btn btn-warning">Nashik</button>
                         <div class="body-sm fg-warning-1">coming soon</div></div>
-                        <div class=" container-bg-warning-2 rounded-3 text-center">
+                        <div class=" container-bg-warning-2 rounded-3 text-center">&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <button type="button" class="btn btn-warning">Nagpur</button>
-                        <div class="body-sm fg-warning-1" style={{marginLeft:"120px"}}>coming soon</div></div>
+                        <div class="body-sm fg-warning-1" style={{marginLeft:"120px"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coming soon</div></div>
                         <div class=" container-bg-warning-2 rounded-3 text-center">
                         <button type="button" class="btn btn-warning">Aurangabad</button>
                         <div class="body-sm fg-warning-1">coming soon</div></div></div></div>
 
 
             <div class="col-lg-5 offset-lg-1 col-12 order-1 order-lg-2" >
-                <img src={map} style={{height:"420px",width:"480px"}}alt="india-map-with-markers"/>
+                <img src={map} style={{height:"500px",width:"480px"}}alt="india-map-with-markers"/>
                 </div></div></div></section>
 
 {/* <ScrapRates></ScrapRates> */}
@@ -118,6 +142,8 @@ function Home()
 
 
 <center><h1>Scrap Rates</h1></center> 
+<br></br>
+          
          <br></br><br></br><br></br>
           <div className="container" >
                 <div className="row">
@@ -176,13 +202,18 @@ function Home()
         </div>
        
         <div className="col-3">
-                <button type="button" class="btn btn-link btn btn-warning btn-lg"style={{marginTop:"120px"}}>View All</button>
+                <button type="button"   class="btn btn-link btn btn-warning btn-lg"style={{marginTop:"120px"}}> <a href="/ShowScraps" style={{textDecoration:"none"}}>View All</a></button>
      </div>
 
         </div>
         </div>
-          
+          <br></br>
+          <br></br>
+          <br></br>
+         
+         
 <br></br><br></br><br></br>
+<Footer/>
 
 {/* 
 Blogs */}

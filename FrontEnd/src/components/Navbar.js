@@ -2,6 +2,10 @@ import { Component } from "react";
 import "./Navbar.css";
 import {Link} from "react-router-dom";
 import logo from "./images/logo.jpg";
+
+import { Routes,Switch,Route } from 'react-router-dom';
+
+
 class Navbar extends Component{
     state = {clicked:false};
     handleClick = () =>{
@@ -11,6 +15,11 @@ class Navbar extends Component{
     return(
         
         <nav>
+
+
+
+
+            
             {/* <a href="index.html"> */}
                 {/* <svg id="logo-15" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg"> 
                 <path d="M24.5 12.75C24.5 18.9632 19.4632 24 13.25 24H2V12.75C2 6.53679 7.03679 1.5 13.25 1.5C19.4632 1.5 24.5 6.53679 24.5 12.75Z" class="ccustom" fill="#17CF97"></path> <path d="M24.5 35.25C24.5 29.0368 29.5368 24 35.75 24H47V35.25C47 41.4632 41.9632 46.5 35.75 46.5C29.5368 46.5 24.5 41.4632 24.5 35.25Z" class="ccustom" fill="#17CF97"></path> <path d="M2 35.25C2 41.4632 7.03679 46.5 13.25 46.5H24.5V35.25C24.5 29.0368 19.4632 24 13.25 24C7.03679 24 2 29.0368 2 35.25Z" class="ccustom" fill="#17CF97"></path> 
@@ -18,22 +27,35 @@ class Navbar extends Component{
                 </svg> */}
                 {/* <img src={logo} alt="" id="logo" ></img> */}
                 
-              <a href="index.html" className="logo">scrap<span>Wala.</span></a>
+              <a href="/" className="logo">Scrap<span style={{color:"yellow"}}>वाला</span></a>
             {/* </a> */}
             
             <div>
                <ul id="navbar" className={this.state.clicked ? "#navbar active" : "navbar"}>
                   <li>
                     {/* <a className="active" href="index.html">Home</a> */}
-                    <a><i className="fa-sharp fa-solid fa-house-user"></i>&nbsp;&nbsp;Home</a>
+                    
+                    <a href="/"><i className="fa-sharp fa-solid fa-house-user"></i>&nbsp;&nbsp;Home</a>
                 </li>
+
+
+
+                <li><a href="/Why">Why Us</a></li>
                   
-                  <li><a href="index.html">Why Us</a></li>
-                  
-                  <li><a href="index.html">ScrapRates</a></li>
-                  <li><button type="button" class="btn btn-light">Login</button></li>
+                  <li>
+                    <a href="/ShowScraps">ScrapRates</a>
+                  </li>
+
+
+
+
+                                  
+                 
+                  {/*   
+                  <li><a href="index.html">ScrapRates</a></li> */}
+                  <li><button type="button" class="btn btn"><a href="/AddUser">Login</a></button></li>
         
-                  <li><button type="button" class="btn btn-light">Logout</button></li>
+                  <li><button type="button" class="btn btn-"><a href="/AddUser">Logout</a></button></li>
                </ul>
             </div>
             <div id="mobile" onClick={this.handleClick}>

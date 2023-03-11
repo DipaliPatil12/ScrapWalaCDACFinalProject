@@ -48,6 +48,7 @@ nav{
 .logo{
     font-size: 2rem;
     color:rgb(245, 245, 240);
+  
  
 }
 .logo span{
@@ -71,11 +72,13 @@ nav{
     position: fixed;
     top: 90px;
     right:-300px;
-    width: 300px;
+    width: 100px;
     height:100vh;
     background: #3ab34a;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding:40px 0 0 10px;
+    padding-left: 0rem;
+    padding-right: 0rem;
     }
     #navbar.active{
         right:0px;

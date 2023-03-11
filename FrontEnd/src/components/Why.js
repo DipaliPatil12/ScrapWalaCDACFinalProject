@@ -1,8 +1,11 @@
-import React from "react";
-import "./Why.css";
-function why(){
-return(
-<section class="donation-featured-section">
+import React, { Component } from 'react'
+import './Why.css'
+
+export class Why extends Component {
+	render() {
+		return (
+			<div>
+				<section class="donation-featured-section">
     	<div class="auto-container">
 			<div class="sec-title-six centered">
 				<h2>Why Choose ScrapBazar?</h2>
@@ -70,6 +73,9 @@ return(
 			</div>
 		</div>
 	</section>
-);
+			</div>
+		)
+	}
 }
-    export default why;
+
+export default Why
